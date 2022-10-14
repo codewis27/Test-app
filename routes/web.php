@@ -19,11 +19,7 @@ use App\Models\Posts;
 Route::get('/', [PostsController::class, 'index']);
 
 Route::get('/about', function () {
-    return view('about', [
-        "title" => "About",
-        "name" => "Agus Wisma",
-        "email" => "aguswisma@gmail.com"
-    ]);
+    return view('about');
 });
 
 Route::get('/posts', function () {
